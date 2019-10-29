@@ -12,7 +12,7 @@ func (r *rectangle) area() int {
 	return r.width * r.height
 }
 
-func (r rectangle) perim() int {
+func (r rectangle) circumference() int {
 	return 2*r.width + 2*r.height
 }
 
@@ -20,9 +20,9 @@ func main() {
 	r := rectangle{width: 10, height: 5}
 
 	fmt.Println("area: ", r.area())
-	fmt.Println("perim: ", r.perim())
+	fmt.Println("circumference: ", r.circumference())
 
 	rectanglePointer := &r
 	fmt.Println("area: ", rectanglePointer.area())
-	fmt.Println("perim: ", rectanglePointer.perim())
+	fmt.Println("circumference: ", rectanglePointer.circumference())
 }
